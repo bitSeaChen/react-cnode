@@ -1,0 +1,51 @@
+.profilePanel {
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+  padding: 15px;
+  font-size: 14px;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    li {
+      &:not(:first-child) {
+        line-height: 30px;
+      }
+    }
+
+    .info {
+      img {
+        width: 60px;
+        height: 60px;
+        border-radius: 6px;
+      }
+
+      a {
+        color: #42b983;
+
+        &:hover {
+          color: #40a9ff;
+        }
+      }
+
+      span {
+        margin-left: 10px;
+      }
+    }
+
+    .integral {
+      margin-top: 10px;
+    }
+
+    .github {
+      a {
+        color: #42B983;
+
+        &:hover {
+          color: #1890ff
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.reply {
+  margin-top: 20px;
+  border: 1px solid #DDDDDD;
+  max-width: 100%;
+
+  .replyCount {
+    border-bottom: 1px solid #dddddd;
+    padding: 10px;
+  }
+
+  .item {
+    display: flex;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #dddddd;
+    }
+
+    .left {
+      margin-right: 10px;
+
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 6px;
+      }
+    }
+
+    .right {
+      .info {
+        margin-bottom: 10px;
+
+        .author {
+          a {
+            color: #42b983;
+
+            &:hover {
+              color: #40a9ff
+            }
+          }
+        }
+
+      }
+
+      .content {
+        word-break: break-all;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

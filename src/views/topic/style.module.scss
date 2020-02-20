@@ -1,0 +1,60 @@
+.topic {
+  display: flex;
+  justify-content: space-between;
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    flex-grow: 1;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+    padding: 10px;
+    @media screen and (max-width: 1220px) {
+      max-width: none;
+    }
+
+    .header {
+      margin-bottom: 15px;
+
+      .title {
+        font-size: 24px;
+        font-weight: 600;
+        color: #000;
+      }
+
+      .info {
+        color: #838383;
+        font-size: 12px;
+        margin-top: 10px;
+
+        .author {
+          a {
+            color: #42b983;
+
+            &:hover {
+              color: #40a9ff
+            }
+          }
+        }
+      }
+    }
+
+    .content {
+      img {
+        width: 100% !important;
+      }
+    }
+
+    .reply {
+
+    }
+  }
+
+  .sidebar {
+    width: 280px;
+    @media screen and (max-width: 1220px) {
+      display: none;
+    }
+  }
+
+}

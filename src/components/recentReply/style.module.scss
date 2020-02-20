@@ -1,0 +1,36 @@
+.recentReply {
+  margin-top: 20px;
+  padding: 15px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+  font-size: 14px;
+
+  .title {
+    font-weight: 700;
+    color: #000000;
+  }
+
+  .topic {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    .item {
+      line-height: 28px;
+      color: #42b983;
+      font-weight: 600;
+
+      a {
+        color: #42b983;
+
+        &:hover {
+          color: #40a9ff;
+        }
+      }
+
+      // 单行文本省略
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}

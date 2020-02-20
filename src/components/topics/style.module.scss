@@ -1,0 +1,75 @@
+.topics {
+  .item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .img {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+  }
+
+
+  .count {
+    width: 10%;
+    text-align: center;
+    font-size: 12px;
+
+    @media screen and (max-width: 773px) {
+      display: none;
+    }
+
+    .replyCount {
+      color: #9E78C0
+    }
+
+    .visitCount {
+      color: #B4B4B4;
+    }
+  }
+
+  .tag {
+    text-align: center;
+    @media screen and (max-width: 773px) {
+      margin-left: 5px;
+    }
+  }
+
+  .title {
+    width: 70%;
+    text-align: left;
+    color: #42B983;
+    font-size: 14px;
+    font-weight: 600;
+
+    a {
+      color: #42b983;
+
+      &:hover {
+        color: #1890ff;
+      }
+    }
+
+    @media screen and (max-width: 773px) {
+      width: 65%
+    }
+
+    // 单行文本省略
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .time {
+    flex-grow: 1;
+    color: #778087;
+    font-size: 12px;
+    text-align: right;
+    @media screen and (max-width: 773px) {
+      width: 20%;
+    }
+  }
+}
