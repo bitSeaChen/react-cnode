@@ -1,3 +1,3 @@
 # cNode 社区（react 版）
 
-预览地址：https://xxiang1997.github.io/react-cnode/
+预览地址：https://djChan97.github.io/react-cnode/
